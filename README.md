@@ -1,3 +1,3 @@
 # LCV-CM-Java
 
-Full translation in Java of the [https://github.com/endocode/LCV-CM](http://google.com) version. 
+Full translation in Java of the [LCV-CM Python](https://github.com/endocode/LCV-CM) version.
