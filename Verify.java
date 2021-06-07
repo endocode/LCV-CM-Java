@@ -33,11 +33,10 @@ public class Verify {
             // loop until all lines are read
             while (line != null) {
                 // use string.split to load a string array with the values from
-                // each line of
-                // the file, using a comma as the delimiter
+                // each line of the file, using a comma as the delimiter
                 String[] attributes = line.split(",");
                 CM LicenseRulesSet = fulfillCM(attributes);
-                // adding book into ArrayList
+                // adding a set of CompatibilityRules into ArrayList
                 CompatibilityRules.add(LicenseRulesSet);
                 // read next line before looping
                 // if end of file reached, line would be null
@@ -67,6 +66,9 @@ public class Verify {
             this.Unknown = Unknown;
             this.LGPL30 = LGPL30;
             this.LGPL30orlater = LGPL30orlater;
+        }
+        public String getLicense() {
+            return License;
         }
         public String getUnknown() {
             return Unknown;
