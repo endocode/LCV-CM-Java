@@ -1,10 +1,10 @@
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListTests {
-    public static @NotNull List JSONPathList(){
+    public static List JSONPathList(){
         List GitHubURL;
         GitHubURL = new ArrayList();
 
@@ -82,8 +82,7 @@ public class ListTests {
         return GitHubURL;
 
     }
-    public static @NotNull
-    List GitHubURLList() {
+    public static List GitHubURLList() {
         List JSONPath;
         JSONPath = new ArrayList();
         // hope-boot is license compliant

@@ -1,5 +1,5 @@
-import java.io.IOException;
-import java.util.List;
+//import java.io.IOException;
+//import java.util.List;
 
 /*
 * SPDX-FileCopyrightText: 2021 Michele Scarlato <michele.scarlato@endocode.com>
@@ -8,12 +8,11 @@ import java.util.List;
 */
 
 public class main {
-    public static void main(String[] args) throws IOException, InterruptedException {
-      List JSONPath;
-      JSONPath = ListTests.JSONPathList();
-      System.out.println(JSONPath);
-      List GitHubURL;
-      GitHubURL = ListTests.GitHubURLList();
-      System.out.println(GitHubURL);
+    public static <string> void main(String[] args){
+        string InboundLicenses;
+        string OutboundLicense;
+        InboundLicenses = (string) "MIT,Apache-2.0";
+        OutboundLicense = (string) "MIT";
+        Verify.CompareFlag(InboundLicenses, OutboundLicense);
     }
 }
